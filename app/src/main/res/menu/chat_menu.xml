@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile" android:iconTint="@color/lightest_skin"/>
+
+    <!--show profile-->
+
+    <item
+        android:id="@+id/usersSharedMedia"
+        android:title="Media" android:iconTint="@color/lightest_skin"/>
+
+    <!--show media-->
+
+    <item
+        android:id="@+id/search"
+        android:title="Search" android:iconTint="@color/lightest_skin"/>
+
+    <!--search texts-->
+
+    <item
+        android:id="@+id/clearChat"
+        android:title="Clear Chat" android:iconTint="@color/lightest_skin"/>
+
+    <!--show/edit profile-->
+
+</menu>

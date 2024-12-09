@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="Profile" android:iconTint="@color/lightest_skin"/>
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="Settings" android:iconTint="@color/lightest_skin"/>
+        <!--change profile pic, status(busy,using lunarwhisper, etc),
+             username, theme, notifications, etc.-->
+
+    <!--<item
+        android:id="@+id/inbox"
+        android:icon="@drawable/inbox"
+        android:title="Inbox" android:iconTint="@color/lightest_skin"/> -->
+
+    <item
+        android:id="@+id/starred"
+        android:icon="@drawable/star"
+        android:title="Starred Threads" android:iconTint="@color/lightest_skin"/>
+
+    <item
+        android:id="@+id/promotion"
+        android:icon="@drawable/promotion"
+        android:title="Promotional" android:iconTint="@color/lightest_skin"/>
+
+    <item
+        android:id="@+id/spam"
+        android:icon="@drawable/spam"
+        android:title="Spam" android:iconTint="@color/lightest_skin"/>
+
+    <!--<item
+        android:id="@+id/sent"
+        android:icon="@drawable/sent"
+        android:title="Sent" android:iconTint="@color/lightest_skin"/>-->
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/logout"
+        android:title="Logout" android:iconTint="@color/lightest_skin"/>
+
+    <!--<item
+        android:id="@+id/groupChat"
+        android:title="Group Chat" android:iconTint="@color/lightest_skin"/>-->
+
+    <!--<item
+        android:id="@+id/sharedMedia"
+        android:title="Shared Media" android:iconTint="@color/lightest_skin"/>-->
+
+    <!--<item
+        android:id="@+id/reminder"
+        android:title="Set Reminder" android:iconTint="@color/lightest_skin"/>-->
+    <!-- set designed reminder for ur todo list  -->
+
+    <!--<item
+        android:id="@+id/motivations"
+        android:title="Motivations" android:iconTint="@color/lightest_skin"/>-->
+    <!-- some pop ups for the users to motivate them... can be linked with
+      set reminder and settings(for turing on or off)-->
+
+    <!--<item
+       android:id="@+id/archives"
+       android:title="Archives" android:iconTint="@color/lightest_skin"/>-->
+    <!--Archived status/images-->
+    <!--<item
+        android:id="@+id/clearData"
+        android:title="Clear Data" android:iconTint="@color/lightest_skin"/>-->
+    <!--Clear data of chats and files
+     can be set inside the settings too-->
+
+</menu>

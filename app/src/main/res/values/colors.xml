@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="skin">#A37C7C</color>
+    <color name="dark_skin">#856A6A</color>
+    <color name="dark_brown">#4C3030</color>
+    <color name="light_skin">#C89D9D</color>
+    <color name="lightest_skin">#FDFAF7</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_peach">#EDD0D0</color>
+    <color name="gray">#AAA</color>
+    <color name="dark_gray">#FF424242</color>
+</resources>

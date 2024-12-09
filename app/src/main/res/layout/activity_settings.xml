@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SettingsActivity"
+    style="@style/BG">
+
+    <include layout="@layout/custom_toolbar"
+        android:id="@+id/toolbar"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_centerInParent="true"
+        style="@style/CardBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/accountHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you are logging out &amp; closing the app without logging in again, then you may need to Re-install the app..."
+                android:textColor="#630202"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/changeAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:text="Change Account"
+                android:clickable="true"
+                android:textSize="18sp"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/deleteAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#420209"
+                android:clickable="true"
+                android:text="Delete Account"
+                android:textSize="18sp"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/themeHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Theme"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click the switch to change the Theme"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textOff="Light Mode"
+                android:textOn="Dark Mode"
+                style="@style/TextColor"
+                android:thumb="@drawable/thumb"
+                app:track="@drawable/track"/>
+
+            <TextView
+                android:id="@+id/userTypeHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Type"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change your user type here. Select Primary User for sending normal messages to other Lunars &amp; select Promotional User for sending Promotional/Business Messages..."
+                android:textColor="#630202"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp" />
+
+            <RadioGroup
+                android:id="@+id/userTypeOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/primaryUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary User"
+                    android:buttonTint="@color/dark_brown"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/promotionalUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/dark_brown"
+                    android:text="Promotional User"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

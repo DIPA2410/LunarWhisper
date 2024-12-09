@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/light_skin">
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you want to use LunarWhisper for Primary use (Normal) or Promotional use (Business)? You can change this later in the setting too!"
+        android:textColor="@color/dark_brown"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <RadioGroup
+        android:id="@+id/options_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/dark_brown"
+            android:text="Primary"
+            android:textStyle="bold"
+            android:textColor="@color/dark_brown"/>
+
+        <RadioButton
+            android:id="@+id/radio_promotional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promotional"
+            android:buttonTint="@color/dark_brown"
+            android:textStyle="bold"
+            android:textColor="@color/dark_brown" />
+    </RadioGroup>
+</LinearLayout>

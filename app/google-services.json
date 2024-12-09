@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "775606851148",
+    "project_id": "lunarwhisper-c166f",
+    "storage_bucket": "lunarwhisper-c166f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775606851148:android:7056b54d9126a1da8f06e9",
+        "android_client_info": {
+          "package_name": "com.diparoy.lunarwhisper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775606851148-jf92mgnu0c2084ji1rap04m6lmr3j5av.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqsC0h-7TPWlxS-SEU0kAYpwOH2p4rIOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775606851148-jf92mgnu0c2084ji1rap04m6lmr3j5av.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

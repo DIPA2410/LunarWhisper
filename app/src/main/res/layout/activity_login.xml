@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightest_skin"
+    tools:context=".ui.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_anchorGravity="center"
+        app:layout_marginBaseline="10dp"
+        tools:context=".ui.LoginActivity"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:layout_width="195dp"
+            android:layout_height="192dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:background="@drawable/psyche_logo" />
+
+        <TextView
+            android:id="@+id/WelcomeBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="LunarWhisper"
+            android:textColor="@color/dark_skin"
+            android:fontFamily="cursive"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/emailEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:height="50dp"
+            android:background="@drawable/edt_bg"
+            android:hint=" Email..."
+            style="@style/Text"
+            android:textColorHint="@color/dark_gray"
+            android:fontFamily="monospace"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+
+            <EditText
+                android:id="@+id/passEdt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="55dp"
+                android:background="@drawable/edt_bg"
+                android:padding="10dp"
+                android:hint=" Password..."
+                android:textColorHint="@color/dark_gray"
+                android:textSize="18sp"
+                style="@style/Text"
+                android:inputType="textPassword"
+                android:fontFamily="monospace"
+                android:layout_gravity="center_vertical"/>
+
+            <ToggleButton
+                android:id="@+id/passToggle"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="0dp"
+                style="@style/CustomButtonBarButtonStyle"
+                android:background="@drawable/edt_bg"
+                android:backgroundTint="@color/light_skin"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:textOff="Show"
+                android:textOn="Hide" />
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            style="@style/CustomButtonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ellipsize="none"
+            android:text="Login"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:background="@color/light_skin"
+            android:textSize="20sp"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/forgotPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Forgot Password"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:textColor="@color/dark_brown"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/gotoRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="I Don't Have An Account"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

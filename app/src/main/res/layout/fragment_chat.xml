@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ChatFragment"
+    style="@style/BG">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/add"
+        app:backgroundTint="@color/light_skin"
+        app:elevation="6dp"
+        android:contentDescription="Add Chat Threads" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allChatsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:scrollbars="none"/>
+
+    <LinearLayout
+        android:id="@+id/gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/chat_doodle"
+        android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:text="No Chats Yet. Tap '+' or search icon to find other Lunars!"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/dark_gray"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
